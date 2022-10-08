@@ -16,45 +16,20 @@
             "error",
             "LabeledStatement",
             "WithStatement"
-        ],
-        "import/extensions": [
-            "error",
-            "ignorePackages",
-            {
-                "js": "never",
-                "jsx": "never",
-                "ts": "never",
-                "tsx": "never"
-            }
         ]
     },
     "parser": "@babel/eslint-parser",
-    "settings": {
-        "import/resolver": {
-            "node": {
-                "extensions": [
-                    ".js",
-                    ".jsx",
-                    ".ts",
-                    ".tsx"
-                ]
-            }
-        }
-    },
     "overrides": [
         {
             "files": [
                 "**/*.{ts,tsx}"
             ],
-            "env": {
-                "jest": true
-            },
             "parser": "@typescript-eslint/parser",
             "parserOptions": {
                 "project": "./tsconfig.json"
             },
             "extends": [
-                "plugin:@typescript-eslint/recommended"
+                "airbnb-typescript/base"
             ],
             "rules": {}
         }

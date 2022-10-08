@@ -6,7 +6,7 @@
     "scripts": {
         "start": "webpack-dev-server --mode development",
         "build": "webpack --mode production",
-        "lint": "eslint .",
+        "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
         "test": "jest",
         "coverage": "jest --coverage",
         "preshow:coverage": "npm run coverage",
@@ -32,7 +32,7 @@
         "babel-loader": "^8.2.5",
         "css-loader": "^6.7.1",
         "eslint": "^8.25.0",
-        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-airbnb-typescript": "^17.0.0",
         "eslint-plugin-import": "^2.26.0",
         "html-loader": "^4.1.0",
         "html-webpack-plugin": "^5.5.0",
