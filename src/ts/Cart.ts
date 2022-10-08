@@ -1,13 +1,13 @@
-import Movie from "./Movie";
+import Movie from './Movie';
 
 export default class Cart {
-    private _items: Movie[] = []
+  private _items: Movie[] = [];
 
-    add(item: Movie): void {
-        this._items.push(item)
-    }
+  add(item: Movie): void {
+    this._items.push(item);
+  }
 
-    get items() {
-        return this._items
-    }
+  get items() {
+    return this._items;
+  }
 }
